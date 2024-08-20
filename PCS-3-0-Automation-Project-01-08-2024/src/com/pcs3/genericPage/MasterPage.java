@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MasterPage {
 
@@ -34,6 +36,19 @@ public class MasterPage {
 				System.getProperty("user.dir") + "\\src\\com\\pcs\\repository\\testdata.properties");
 		prop = new Properties();
 		prop.load(fs);
+		
+		if(prop.getProperty("browser").equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\com.pcs.drivers\\msedgedriver.exe");
+			driver = new ChromeDriver();
+		}
+		
+		else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\com.pcs.drivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
+			
+		}else {
+			System.out.println("Open IE browser");
+		}
 
 	}
 }
