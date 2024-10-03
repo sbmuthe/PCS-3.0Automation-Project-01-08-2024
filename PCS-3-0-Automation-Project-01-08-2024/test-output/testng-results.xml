@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-03T09:12:22 IST" name="Default suite" finished-at="2024-10-03T09:14:27 IST" duration-ms="124636">
+    <groups>
+    </groups>
+    <test started-at="2024-10-03T09:12:22 IST" name="Default test" finished-at="2024-10-03T09:14:27 IST" duration-ms="124636">
+      <class name="com.pcs.tests.PCSLaunchTest">
+        <test-method signature="pcsLandingTest()[pri:0, instance:com.pcs.tests.PCSLaunchTest@6a370f4]" started-at="2024-10-03T09:12:22 IST" name="pcsLandingTest" finished-at="2024-10-03T09:14:27 IST" duration-ms="124582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pcsLandingTest -->
+      </class> <!-- com.pcs.tests.PCSLaunchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
